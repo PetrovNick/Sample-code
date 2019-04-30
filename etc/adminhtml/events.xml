@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="extait_articles_save_after">
+        <observer name="extait_articles_save_url_rewrite" instance="Extait\Articles\Observer\ArticleUrlRewrite" />
+        <observer name="products_related_article" instance="Extait\Articles\Observer\ProductsRelatedArticle" />
+    </event>
+    <event name="extait_articles_delete_after">
+        <observer name="extait_articles_delete_url_rewrite" instance="Extait\Articles\Observer\ArticleDeleteUrlRewrite" />
+        <observer name="extait_articles_delete_relation" instance="Extait\Articles\Observer\ArticleDeleteRelation" />
+    </event>
+    <event name="controller_action_catalog_product_save_entity_after">
+        <observer name="articles_related_product" instance="Extait\Articles\Observer\ArticlesRelatedProduct" />
+    </event>
+</config>

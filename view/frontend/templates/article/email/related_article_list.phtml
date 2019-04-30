@@ -1,0 +1,12 @@
+<?php $articles = $block->getArticles(); ?>
+<?php if (count($articles)>0) : ?>
+    <?php foreach ($articles as $article) : ?>
+        <?php $href = $article['url']; ?>
+        <?php $name = $article['title']; ?>
+        <?php if ($href && $name) : ?>
+            <div>
+                <a href="<?= $href ?>"><?= $name; ?></a>
+            </div>
+        <?php endif; ?>
+    <?php endforeach;?>
+<?php endif;?>

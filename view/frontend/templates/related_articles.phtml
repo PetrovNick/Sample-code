@@ -1,0 +1,19 @@
+<?php
+/**
+ * @var Extait\Articles\Block\Product\RelatedArticles $block
+ */
+?>
+<?php $collection = $block->getArticles(); ?>
+<?php  if (empty($collection)) : ?>
+    <h1>Related Articles will be here!</h1>
+<?php else : ?>
+    <?php foreach ($collection as $item) : ?>
+        <div>
+            <?php $href = $block->getArticleUrl($item); ?>
+            <?php $name = $item->getTitle(); ?>
+            <?php if ($href && $name) : ?>
+                <a href="<?= $href; ?>"><?= $name; ?></a>
+            <?php endif; ?>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>

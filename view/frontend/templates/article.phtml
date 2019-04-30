@@ -1,0 +1,12 @@
+<?php $article = $block->getArticle(); ?>
+<?php if (!empty($article)) : ?>
+    <h2>
+        <?= $article->getContent(); ?>
+    </h2>
+    <h2>
+        <?= $article->getAuthor(); ?>
+    </h2>
+    <h2>
+        <?= $article->getPublished_at(); ?>
+    </h2>
+<?php endif; ?>

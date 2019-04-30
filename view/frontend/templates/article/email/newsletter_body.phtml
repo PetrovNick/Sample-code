@@ -1,0 +1,22 @@
+<?php $articles = $block->getArticles(); ?>
+<?php if (!empty($articles)) : ?>
+    <?php foreach ($articles as $article) :?>
+        <table>
+            <tr>
+                <td>
+                    <a href="<?= $article->getUrl(); ?>">
+                        <div>
+                            <p>Published : <?= $article->getTimeAccordingToTimeZone(); ?></p>
+                            <p>Title : <?= $article->getTitle(); ?></p>
+                            <p>Content : <?= $article->getContent(); ?></p>
+
+                        </div>
+                    </a>
+                    <p>===============================</p>
+                </td>
+            </tr>
+        </table>
+    <?php endforeach; ?>
+<?php else: ?>
+    <h1>No news yet!!</h1>
+<?php endif; ?>

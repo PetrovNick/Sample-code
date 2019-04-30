@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Extait_Articles::Articles"
+             title="Articles"
+             module="Extait_Articles"
+             sortOrder="0"
+             parent="Magento_Backend::content_elements"
+             resource="Magento_Backend::content"
+             action="admin_articles/index/index"
+             />
+    </menu>
+</config>

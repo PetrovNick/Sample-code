@@ -1,0 +1,38 @@
+Back,Back
+"Delete Article","Delete Article"
+"Are you sure you want to do this?","Are you sure you want to do this?"
+"Save Article","Save Article"
+"The article has been deleted.","The article has been deleted."
+"Edit Article","Edit Article"
+Articles,Articles
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"A total of %1 record(s) have been disabled.","A total of %1 record(s) have been disabled."
+"A total of %1 record(s) have been enabled.","A total of %1 record(s) have been enabled."
+"New Article","New Article"
+"The article has been saved.","The article has been saved."
+Enabled,Enabled
+Disabled,Disabled
+Yes,Yes
+No,No
+Edit,Edit
+Delete,Delete
+"Delete %1","Delete %1"
+"Are you sure you want to delete a %1 record?","Are you sure you want to delete a %1 record?"
+"Create New Article","Create New Article"
+"Delete items","Delete items"
+"Are you sure you want to delete selected items?","Are you sure you want to delete selected items?"
+Enable,Enable
+"Enable items","Enable items"
+"Are you sure you want to enable selected items?","Are you sure you want to enable selected items?"
+Disable,Disable
+"Disable items","Disable items"
+"Are you sure you want to disable selected items?","Are you sure you want to disable selected items?"
+ID,ID
+Title,Title
+Author,Author
+Status,Status
+"Publication Date","Publication Date"
+Published,Published
+"Article Title","Article Title"
+"Article Author","Article Author"
+"Last Modified","Last Modified"

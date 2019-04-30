@@ -1,0 +1,18 @@
+<?php
+/**
+ * @var Extait\Articles\Block\Main $block
+ */
+?>
+
+<?php $collection = $this->getArticles(); ?>
+<?php if (!empty($collection)) : ?>
+    <?php foreach ($collection as $item) : ?>
+        <div>
+            <?php $href = $block->getArticleUrl($item); ?>
+            <?php $name = $item->getTitle(); ?>
+            <?php if ($href && $name) : ?>
+                <a href="<?= $href; ?>" class="sidebar-href"><?= $name; ?></a>
+            <?php endif; ?>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>
